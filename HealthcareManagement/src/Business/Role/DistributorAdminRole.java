@@ -7,18 +7,18 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
-
 import javax.swing.JPanel;
-import userinterface.SystemAdminWorkAreas.SystemAdminWorkAreaJPanel;
+import userinterface.Distributor.DistributorAdminWorkAreaJPanel;
 /**
  *
  * @author mitra
  */
-public class SystemAdminRole extends Role{
+
+public class DistributorAdminRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem system) {
-        return new SystemAdminWorkAreaJPanel(userProcessContainer, system);
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
+        return new DistributorAdminWorkAreaJPanel(userProcessContainer, enterprise);
     }
     
 }
