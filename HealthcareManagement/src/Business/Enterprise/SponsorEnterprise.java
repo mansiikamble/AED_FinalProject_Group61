@@ -4,28 +4,23 @@
  */
 package Business.Enterprise;
 
-import Business.Role.ResearchLabAdminRole;
 import Business.Role.Role;
+import Business.Role.SponsorAdmin;
 import java.util.HashSet;
 
 /**
  *
  * @author mansi kamble
  */
-public class ResearchLabEnterprise extends Enterprise{
-
-
+public class SponsorEnterprise extends Enterprise {
     
-
-    public ResearchLabEnterprise(String name) {
-        super(name, Enterprise.EnterpriseType.ResearchLab);
+    public SponsorEnterprise(String name) {
+        super(name, Enterprise.EnterpriseType.Sponsor);
     }
 
     @Override
     public HashSet<Role> getSupportedRole() {
-        roles.add(new ResearchLabAdminRole());
+        roles.add(new SponsorAdmin());
         return roles;
     }
-
-    
 }
