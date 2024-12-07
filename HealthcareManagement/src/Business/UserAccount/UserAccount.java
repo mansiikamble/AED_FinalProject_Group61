@@ -5,12 +5,15 @@
 package Business.UserAccount;
 
 import Business.Employee.Employee;
+import Business.Role.Role;
+import Business.WorkQueue.WorkQueue;
 
 /**
  *
  * @author mitra
  */
 public class UserAccount {
+    
     private String username;
     private String password;
     private Employee employee;
@@ -65,4 +68,7 @@ public class UserAccount {
     public String toString() {
         return username;
     }
+    
+    
+    
 }
