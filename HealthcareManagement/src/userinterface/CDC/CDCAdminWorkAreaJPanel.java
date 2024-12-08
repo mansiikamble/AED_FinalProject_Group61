@@ -49,10 +49,14 @@ public class CDCAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnCatalog = new javax.swing.JButton();
         btnCDCManageWorkRequest = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(247, 181, 202));
+
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("CDC Admin Work Area ");
 
-        userJButton.setBackground(new java.awt.Color(102, 217, 255));
+        userJButton.setBackground(new java.awt.Color(166, 77, 121));
+        userJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        userJButton.setForeground(new java.awt.Color(255, 255, 255));
         userJButton.setText("Manage User");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +64,9 @@ public class CDCAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(102, 217, 255));
+        manageEmployeeJButton.setBackground(new java.awt.Color(166, 77, 121));
+        manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageEmployeeJButton.setText("Manage Employee");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,7 +74,9 @@ public class CDCAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(102, 217, 255));
+        manageOrganizationJButton.setBackground(new java.awt.Color(166, 77, 121));
+        manageOrganizationJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageOrganizationJButton.setText("Manage Organization");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,11 +84,14 @@ public class CDCAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        enterpriseLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
 
         valueLabel.setText("<value>");
 
-        btnCatalog.setBackground(new java.awt.Color(102, 217, 255));
+        btnCatalog.setBackground(new java.awt.Color(166, 77, 121));
+        btnCatalog.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCatalog.setForeground(new java.awt.Color(255, 255, 255));
         btnCatalog.setText("View Catalog");
         btnCatalog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +99,9 @@ public class CDCAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCDCManageWorkRequest.setBackground(new java.awt.Color(102, 217, 255));
+        btnCDCManageWorkRequest.setBackground(new java.awt.Color(166, 77, 121));
+        btnCDCManageWorkRequest.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCDCManageWorkRequest.setForeground(new java.awt.Color(255, 255, 255));
         btnCDCManageWorkRequest.setText("Manage Lab Work Request");
         btnCDCManageWorkRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,43 +116,41 @@ public class CDCAdminWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(283, 283, 283)
+                        .addGap(313, 313, 313)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
+                        .addGap(101, 101, 101)
                         .addComponent(enterpriseLabel)
-                        .addGap(36, 36, 36)
-                        .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(117, 117, 117)
+                        .addGap(84, 84, 84)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnCatalog, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnCDCManageWorkRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(462, Short.MAX_VALUE))
+                .addContainerGap(326, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterpriseLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
+                .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(btnCatalog, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addComponent(btnCDCManageWorkRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(351, 351, 351))
+                .addContainerGap(361, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

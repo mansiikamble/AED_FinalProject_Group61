@@ -72,6 +72,8 @@ public class CDCCatalogJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(247, 181, 202));
+
         tblDisease.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

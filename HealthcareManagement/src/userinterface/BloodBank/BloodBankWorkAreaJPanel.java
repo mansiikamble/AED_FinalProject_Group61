@@ -50,21 +50,27 @@ public class BloodBankWorkAreaJPanel extends javax.swing.JPanel {
         btnBloodDonationResults = new javax.swing.JButton();
         btnEndUserBloodrequest = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(133, 169, 143));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("Blood Bank Work Area");
 
-        btnBloodDonationResults.setBackground(new java.awt.Color(102, 217, 255));
+        btnBloodDonationResults.setBackground(new java.awt.Color(82, 91, 68));
+        btnBloodDonationResults.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnBloodDonationResults.setForeground(new java.awt.Color(255, 255, 255));
         btnBloodDonationResults.setText("Blood Donation Results");
+        btnBloodDonationResults.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBloodDonationResults.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBloodDonationResultsActionPerformed(evt);
             }
         });
 
-        btnEndUserBloodrequest.setBackground(new java.awt.Color(102, 217, 255));
+        btnEndUserBloodrequest.setBackground(new java.awt.Color(82, 91, 68));
+        btnEndUserBloodrequest.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnEndUserBloodrequest.setForeground(new java.awt.Color(255, 255, 255));
         btnEndUserBloodrequest.setText("End User Blood Request");
+        btnEndUserBloodrequest.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnEndUserBloodrequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEndUserBloodrequestActionPerformed(evt);
@@ -78,26 +84,32 @@ public class BloodBankWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(226, 226, 226)
-                        .addComponent(jLabel1))
+                        .addGap(232, 232, 232)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnEndUserBloodrequest)
+                            .addComponent(btnBloodDonationResults, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(213, 213, 213)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnBloodDonationResults, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEndUserBloodrequest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(499, Short.MAX_VALUE))
+                        .addGap(257, 257, 257)
+                        .addComponent(jLabel1)))
+                .addContainerGap(472, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnBloodDonationResults, btnEndUserBloodrequest});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(60, 60, 60)
                 .addComponent(jLabel1)
-                .addGap(61, 61, 61)
+                .addGap(59, 59, 59)
                 .addComponent(btnBloodDonationResults, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
+                .addGap(56, 56, 56)
                 .addComponent(btnEndUserBloodrequest, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(373, Short.MAX_VALUE))
+                .addContainerGap(321, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnBloodDonationResults, btnEndUserBloodrequest});
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBloodDonationResultsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloodDonationResultsActionPerformed
