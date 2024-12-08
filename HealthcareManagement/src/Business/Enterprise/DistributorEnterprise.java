@@ -14,9 +14,9 @@ import java.util.HashSet;
  *
  * @author mansi kamble
  */
-public class DistributorEnterprise {
+public class DistributorEnterprise extends Enterprise{
     
-    public DistributorEnterprise(String name) {
+      public DistributorEnterprise(String name) {
         super(name, Enterprise.EnterpriseType.Distributor);
     }
 
@@ -26,5 +26,4 @@ public class DistributorEnterprise {
         roles.add(new SupplierRole());
         return roles;
     }
-    
 }
