@@ -28,7 +28,7 @@ public class EnterpriseDirectory {
             enterpriseList.add(enterprise);
         }
         else if (type == Enterprise.EnterpriseType.CDC){
-            enterprise = new CDCEnterprise(name);
+            enterprise = (Enterprise) new CDCEnterprise(name);
             enterpriseList.add(enterprise);
         }
         else  if (type == Enterprise.EnterpriseType.Distributor){
