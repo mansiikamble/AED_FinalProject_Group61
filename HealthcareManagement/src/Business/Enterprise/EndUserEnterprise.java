@@ -12,8 +12,8 @@ import java.util.HashSet;
  *
  * @author mansi kamble
  */
-public class EndUserEnterprise {
-    
+public class EndUserEnterprise extends Enterprise{
+  
     public EndUserEnterprise(String name) {
       super(name, EnterpriseType.EndUser);
     }
@@ -22,5 +22,4 @@ public class EndUserEnterprise {
     public HashSet<Role> getSupportedRole() {
        throw new UnsupportedOperationException("Not supported yet."); 
     }
-    
 }
