@@ -13,9 +13,8 @@ import java.util.HashSet;
  *
  * @author mansi kamble
  */
-public class CDCEnterprise {
-    
-    public CDCEnterprise(String name) {
+public class CDCEnterprise extends Enterprise{
+      public CDCEnterprise(String name) {
         super(name, Enterprise.EnterpriseType.CDC);
     }
 
@@ -23,6 +22,5 @@ public class CDCEnterprise {
     public HashSet<Role> getSupportedRole() {
         roles.add(new CDCManagerRole());
         return roles;
-    } 
-    
+    }
 }
