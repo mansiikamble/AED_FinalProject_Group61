@@ -16,7 +16,7 @@ import javax.swing.JPanel;
  * @author mitra
  */
 public abstract class Role {
-    
+        
     public enum RoleType{
         
         
@@ -61,7 +61,12 @@ public abstract class Role {
 
     @Override
     public String toString() {
-        return this.getClass().toString();
+        //return this.getClass().toString();
+        String className = this.getClass().getSimpleName(); // Get the simple name of the class
+        if (className.endsWith("Role")) {
+            className = className.substring(0, className.length() - 4); // Remove "Role" suffix if present
+        }
+        return className;
     }
     
     

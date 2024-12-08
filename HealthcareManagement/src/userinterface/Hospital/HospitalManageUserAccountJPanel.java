@@ -57,7 +57,7 @@ public class HospitalManageUserAccountJPanel extends javax.swing.JPanel {
     private void populateRoleComboBox(Enterprise e){
         roleJComboBox.removeAllItems();
         for (Role role : e.getSupportedRole()){
-            roleJComboBox.addItem(role);
+            roleJComboBox.addItem(role.toString());
         }
     }
 
@@ -170,6 +170,12 @@ public class HospitalManageUserAccountJPanel extends javax.swing.JPanel {
         jLabel4.setBackground(new java.awt.Color(102, 217, 255));
         jLabel4.setText("Role");
 
+        roleJComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roleJComboBoxActionPerformed(evt);
+            }
+        });
+
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel6.setText("Hospital Manage User Account");
 
@@ -198,7 +204,7 @@ public class HospitalManageUserAccountJPanel extends javax.swing.JPanel {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(jLabel1)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                                             .addComponent(nameJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(layout.createSequentialGroup()
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -284,6 +290,10 @@ public class HospitalManageUserAccountJPanel extends javax.swing.JPanel {
             populateRoleComboBox(enterprise);
         }
     }//GEN-LAST:event_organizationJComboBoxActionPerformed
+
+    private void roleJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roleJComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roleJComboBoxActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backjButton1;
