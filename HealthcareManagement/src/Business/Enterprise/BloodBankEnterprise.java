@@ -12,9 +12,9 @@ import java.util.HashSet;
  *
  * @author mansi kamble
  */
-public class BloodBankEnterprise {
+public class BloodBankEnterprise extends Enterprise{
     
-    public BloodBankEnterprise(String name) {
+      public BloodBankEnterprise(String name) {
         super(name, Enterprise.EnterpriseType.BloodBank);
     }
 
@@ -23,5 +23,4 @@ public class BloodBankEnterprise {
         roles.add(new BloodBankAdminRole());
         return roles;
     }
-    
 }
