@@ -92,7 +92,7 @@ public class NGOManageRequestHospitalJPanel extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(129, 143, 180));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("NGO Manage Request");
@@ -157,7 +157,8 @@ public class NGOManageRequestHospitalJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCreateHospital.setBackground(new java.awt.Color(102, 217, 255));
+        btnCreateHospital.setBackground(new java.awt.Color(0, 31, 63));
+        btnCreateHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateHospital.setText("Create Request");
         btnCreateHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,7 +166,8 @@ public class NGOManageRequestHospitalJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDeleteReqNgo.setBackground(new java.awt.Color(102, 217, 255));
+        btnDeleteReqNgo.setBackground(new java.awt.Color(0, 31, 63));
+        btnDeleteReqNgo.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteReqNgo.setText("Delete Request");
         btnDeleteReqNgo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,9 +200,6 @@ public class NGOManageRequestHospitalJPanel extends javax.swing.JPanel {
                             .addGap(31, 31, 31)
                             .addComponent(jLabel4))
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(192, 192, 192)
-                            .addComponent(btnCreateHospital))
-                        .addGroup(layout.createSequentialGroup()
                             .addGap(50, 50, 50)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
@@ -222,7 +221,8 @@ public class NGOManageRequestHospitalJPanel extends javax.swing.JPanel {
                                     .addComponent(txtTimeNGOHospital)
                                     .addComponent(txtVenueNGOHospital)
                                     .addComponent(txtDoctorsNGOHospital, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCreateHospital)))))
                 .addContainerGap(211, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -252,9 +252,9 @@ public class NGOManageRequestHospitalJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(txtDoctorsNGOHospital, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addGap(29, 29, 29)
                 .addComponent(btnCreateHospital)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)

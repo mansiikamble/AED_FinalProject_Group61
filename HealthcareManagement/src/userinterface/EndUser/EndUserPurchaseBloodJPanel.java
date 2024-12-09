@@ -82,7 +82,7 @@ public class EndUserPurchaseBloodJPanel extends javax.swing.JPanel {
         btnDeleteReq = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(247, 181, 202));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("Purchase Blood");
@@ -99,7 +99,8 @@ public class EndUserPurchaseBloodJPanel extends javax.swing.JPanel {
         jLabel3.setBackground(new java.awt.Color(102, 217, 255));
         jLabel3.setText("Number of blood packets required:");
 
-        btnCreateReq.setBackground(new java.awt.Color(102, 217, 255));
+        btnCreateReq.setBackground(new java.awt.Color(166, 77, 121));
+        btnCreateReq.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateReq.setText("Create Request");
         btnCreateReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,7 +133,8 @@ public class EndUserPurchaseBloodJPanel extends javax.swing.JPanel {
 
         jLabel4.setText("Request for Blood");
 
-        btnDeleteReq.setBackground(new java.awt.Color(102, 217, 255));
+        btnDeleteReq.setBackground(new java.awt.Color(166, 77, 121));
+        btnDeleteReq.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteReq.setText("Delete Request");
         btnDeleteReq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,13 +175,14 @@ public class EndUserPurchaseBloodJPanel extends javax.swing.JPanel {
                         .addGap(52, 52, 52)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnDeleteReq)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(356, 356, 356))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(btnBack)))
-                .addContainerGap(394, Short.MAX_VALUE))
+                .addContainerGap(289, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

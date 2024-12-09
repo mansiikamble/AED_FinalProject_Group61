@@ -47,18 +47,22 @@ public class NGOAdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel = new javax.swing.JLabel();
         btnHospital = new javax.swing.JButton();
         btnSponsor = new javax.swing.JButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(129, 143, 180));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("                             NGO Admin Work Area");
 
         enterpriseLabel.setBackground(new java.awt.Color(102, 217, 255));
+        enterpriseLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         enterpriseLabel.setText("Enterprise :");
 
         valueLabel.setText("<value>");
 
-        btnHospital.setBackground(new java.awt.Color(102, 217, 255));
+        btnHospital.setBackground(new java.awt.Color(0, 31, 63));
+        btnHospital.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnHospital.setText("HOSPITAL");
         btnHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +70,9 @@ public class NGOAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnSponsor.setBackground(new java.awt.Color(102, 217, 255));
+        btnSponsor.setBackground(new java.awt.Color(0, 31, 63));
+        btnSponsor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnSponsor.setForeground(new java.awt.Color(255, 255, 255));
         btnSponsor.setText("SPONSOR");
         btnSponsor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,8 +99,13 @@ public class NGOAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 138, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 633, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(129, 129, 129))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 633, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(129, 129, 129))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(306, 306, 306))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,7 +120,9 @@ public class NGOAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(btnHospital, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
                 .addComponent(btnSponsor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(298, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(156, 156, 156))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -135,6 +148,7 @@ public class NGOAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnSponsor;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel valueLabel;
     // End of variables declaration//GEN-END:variables
 }

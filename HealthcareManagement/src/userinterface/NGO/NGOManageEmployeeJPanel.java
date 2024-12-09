@@ -54,7 +54,7 @@ public class NGOManageEmployeeJPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         addJButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(129, 143, 180));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel4.setText("Manage Employee");
@@ -116,7 +116,8 @@ public class NGOManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
-        addJButton.setBackground(new java.awt.Color(102, 217, 255));
+        addJButton.setBackground(new java.awt.Color(0, 31, 63));
+        addJButton.setForeground(new java.awt.Color(255, 255, 255));
         addJButton.setText("Create Employee");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

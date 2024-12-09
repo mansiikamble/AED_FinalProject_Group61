@@ -100,7 +100,7 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
         cmbDocType = new javax.swing.JComboBox<>();
         btnDelete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(247, 181, 202));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("Hospital Manage Request From NGO");
@@ -134,7 +134,8 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
             tblHospitalManageRequestNgo.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        btnRejectReqHospital.setBackground(new java.awt.Color(102, 217, 255));
+        btnRejectReqHospital.setBackground(new java.awt.Color(166, 77, 121));
+        btnRejectReqHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnRejectReqHospital.setText("Reject Request");
         btnRejectReqHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,7 +143,8 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnApproveReqHospital.setBackground(new java.awt.Color(102, 217, 255));
+        btnApproveReqHospital.setBackground(new java.awt.Color(166, 77, 121));
+        btnApproveReqHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnApproveReqHospital.setText("Approve Request");
         btnApproveReqHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,7 +160,8 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDeleteReqHosp.setBackground(new java.awt.Color(102, 217, 255));
+        btnDeleteReqHosp.setBackground(new java.awt.Color(166, 77, 121));
+        btnDeleteReqHosp.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteReqHosp.setText("Delete Request");
         btnDeleteReqHosp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,7 +169,8 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnAssignToMe.setBackground(new java.awt.Color(102, 217, 255));
+        btnAssignToMe.setBackground(new java.awt.Color(166, 77, 121));
+        btnAssignToMe.setForeground(new java.awt.Color(255, 255, 255));
         btnAssignToMe.setText("Assign to me");
         btnAssignToMe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,7 +213,8 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnAdd.setBackground(new java.awt.Color(102, 217, 255));
+        btnAdd.setBackground(new java.awt.Color(166, 77, 121));
+        btnAdd.setForeground(new java.awt.Color(255, 255, 255));
         btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,7 +225,8 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
         jLabel7.setBackground(new java.awt.Color(102, 217, 255));
         jLabel7.setText("Doctor Type:");
 
-        btnDelete.setBackground(new java.awt.Color(102, 217, 255));
+        btnDelete.setBackground(new java.awt.Color(166, 77, 121));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,27 +260,27 @@ public class HospitalManageNgoRequestJPanel extends javax.swing.JPanel {
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 574, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(btnBack)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNoDoctors)
-                            .addComponent(cmbDocType, 0, 88, Short.MAX_VALUE))
-                        .addGap(158, 158, 158)
-                        .addComponent(btnDelete))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(btnAdd))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(39, 39, 39)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel4))))
+                            .addComponent(jLabel4)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))
+                        .addGap(37, 37, 37)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnAdd)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtNoDoctors)
+                                    .addComponent(cmbDocType, 0, 88, Short.MAX_VALUE))
+                                .addGap(158, 158, 158)
+                                .addComponent(btnDelete)))))
                 .addContainerGap(255, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
