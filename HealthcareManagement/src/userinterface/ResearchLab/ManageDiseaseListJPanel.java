@@ -63,7 +63,7 @@ public class ManageDiseaseListJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(133, 169, 143));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblDisease.setModel(new javax.swing.table.DefaultTableModel(
@@ -86,14 +86,15 @@ public class ManageDiseaseListJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 590, 170));
 
-        btnCreateNewDisease.setBackground(new java.awt.Color(102, 217, 255));
+        btnCreateNewDisease.setBackground(new java.awt.Color(82, 91, 68));
+        btnCreateNewDisease.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateNewDisease.setText("Create New Disease");
         btnCreateNewDisease.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateNewDiseaseActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCreateNewDisease, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, 150, -1));
+        jPanel1.add(btnCreateNewDisease, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 150, -1));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
         btnBack.setText("<< Back");
@@ -107,7 +108,8 @@ public class ManageDiseaseListJPanel extends javax.swing.JPanel {
         lblwelcome.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jPanel1.add(lblwelcome, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 20, 240, 20));
 
-        btnDelete.setBackground(new java.awt.Color(102, 217, 255));
+        btnDelete.setBackground(new java.awt.Color(82, 91, 68));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete Disease");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,25 +120,26 @@ public class ManageDiseaseListJPanel extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel3.setText("Create Disease ");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 170, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 170, 30));
 
         txtVaccineName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtVaccineNameKeyPressed(evt);
             }
         });
-        jPanel1.add(txtVaccineName, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 120, -1));
+        jPanel1.add(txtVaccineName, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, 120, -1));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel4.setText("Manage Disease Directory");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 320, 30));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 320, 30));
 
         jLabel2.setBackground(new java.awt.Color(102, 217, 255));
         jLabel2.setText("Name:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, -1, 20));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, -1, 20));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Diseases:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 66, 80, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

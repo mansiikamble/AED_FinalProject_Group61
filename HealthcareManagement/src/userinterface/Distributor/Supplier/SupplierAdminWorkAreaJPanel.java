@@ -135,12 +135,13 @@ public class SupplierAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnDelete = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(133, 169, 143));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("Supplier Admin Work Area");
 
-        btnComplete.setBackground(new java.awt.Color(102, 217, 255));
+        btnComplete.setBackground(new java.awt.Color(82, 91, 68));
+        btnComplete.setForeground(new java.awt.Color(255, 255, 255));
         btnComplete.setText("Complete");
         btnComplete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,7 +149,8 @@ public class SupplierAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        reqBtn.setBackground(new java.awt.Color(102, 217, 255));
+        reqBtn.setBackground(new java.awt.Color(82, 91, 68));
+        reqBtn.setForeground(new java.awt.Color(255, 255, 255));
         reqBtn.setText("Assign To Me");
         reqBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,7 +199,8 @@ public class SupplierAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel2.setBackground(new java.awt.Color(102, 217, 255));
         jLabel2.setText("Vaccine Name:");
 
-        backJButton.setBackground(new java.awt.Color(102, 217, 255));
+        backJButton.setBackground(new java.awt.Color(82, 91, 68));
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("Refresh");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,7 +208,8 @@ public class SupplierAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        sellBtn.setBackground(new java.awt.Color(102, 217, 255));
+        sellBtn.setBackground(new java.awt.Color(82, 91, 68));
+        sellBtn.setForeground(new java.awt.Color(255, 255, 255));
         sellBtn.setText("Add Vaccine");
         sellBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,7 +217,8 @@ public class SupplierAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDelete.setBackground(new java.awt.Color(102, 217, 255));
+        btnDelete.setBackground(new java.awt.Color(82, 91, 68));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete request");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

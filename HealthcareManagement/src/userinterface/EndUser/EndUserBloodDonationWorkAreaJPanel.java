@@ -48,9 +48,10 @@ public class EndUserBloodDonationWorkAreaJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(247, 181, 202));
 
-        btnDonate.setBackground(new java.awt.Color(102, 217, 255));
+        btnDonate.setBackground(new java.awt.Color(166, 77, 121));
+        btnDonate.setForeground(new java.awt.Color(255, 255, 255));
         btnDonate.setText("Donate Blood");
         btnDonate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -50,17 +50,20 @@ public class ResearchLabAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnViewVaccine = new javax.swing.JButton();
         btnManageDiseaseList = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(133, 169, 143));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("Research Lab Admin");
 
         jLabel2.setBackground(new java.awt.Color(102, 217, 255));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Enterprise:");
 
         jLabel3.setText("<value>");
 
-        btnCreateVaccine.setBackground(new java.awt.Color(102, 217, 255));
+        btnCreateVaccine.setBackground(new java.awt.Color(82, 91, 68));
+        btnCreateVaccine.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCreateVaccine.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateVaccine.setText("Create New Vaccine");
         btnCreateVaccine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,7 +71,9 @@ public class ResearchLabAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewVaccine.setBackground(new java.awt.Color(102, 217, 255));
+        btnViewVaccine.setBackground(new java.awt.Color(82, 91, 68));
+        btnViewVaccine.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnViewVaccine.setForeground(new java.awt.Color(255, 255, 255));
         btnViewVaccine.setText("Available/Current Vaccines");
         btnViewVaccine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +81,9 @@ public class ResearchLabAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnManageDiseaseList.setBackground(new java.awt.Color(102, 217, 255));
+        btnManageDiseaseList.setBackground(new java.awt.Color(82, 91, 68));
+        btnManageDiseaseList.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnManageDiseaseList.setForeground(new java.awt.Color(255, 255, 255));
         btnManageDiseaseList.setText("Manage Disease");
         btnManageDiseaseList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,16 +98,16 @@ public class ResearchLabAdminWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
+                .addGap(75, 75, 75)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3)
-                    .addComponent(btnCreateVaccine, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                    .addComponent(btnCreateVaccine, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnViewVaccine, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnManageDiseaseList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(526, Short.MAX_VALUE))
+                    .addComponent(btnManageDiseaseList, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(247, 247, 247)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -118,7 +125,7 @@ public class ResearchLabAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(btnCreateVaccine, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnViewVaccine, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(300, Short.MAX_VALUE))
+                .addContainerGap(296, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -72,7 +72,7 @@ public class NGOManageUserAccountJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(129, 143, 180));
 
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -128,7 +128,8 @@ public class NGOManageUserAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        createUserJButton.setBackground(new java.awt.Color(102, 217, 255));
+        createUserJButton.setBackground(new java.awt.Color(0, 31, 63));
+        createUserJButton.setForeground(new java.awt.Color(255, 255, 255));
         createUserJButton.setText("Create");
         createUserJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

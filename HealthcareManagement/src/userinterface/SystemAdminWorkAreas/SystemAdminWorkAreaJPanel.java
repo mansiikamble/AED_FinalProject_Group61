@@ -102,9 +102,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setDividerLocation(150);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(247, 181, 202));
 
-        manageNetworkJButton.setBackground(new java.awt.Color(102, 217, 255));
+        manageNetworkJButton.setBackground(new java.awt.Color(166, 77, 121));
+        manageNetworkJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageNetworkJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageNetworkJButton.setText("Manage Network");
         manageNetworkJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +114,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageAdminJButton.setBackground(new java.awt.Color(102, 217, 255));
+        manageAdminJButton.setBackground(new java.awt.Color(166, 77, 121));
+        manageAdminJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageAdminJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageAdminJButton.setText("Manage Enterprise Admin");
         manageAdminJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +124,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageEnterpriseJButton.setBackground(new java.awt.Color(102, 217, 255));
+        manageEnterpriseJButton.setBackground(new java.awt.Color(166, 77, 121));
+        manageEnterpriseJButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        manageEnterpriseJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageEnterpriseJButton.setText("Manage Enterprise");
         manageEnterpriseJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,9 +149,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
+                        .addGap(21, 21, 21)
                         .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
+                        .addGap(38, 38, 38)
                         .addComponent(selectedNodeJLabel))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(73, 73, 73)
@@ -159,7 +165,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addGap(70, 70, 70)
                                 .addComponent(manageEnterpriseJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(442, Short.MAX_VALUE))
+                .addContainerGap(599, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,6 +189,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+        JTree.setBackground(new java.awt.Color(246, 237, 219));
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("System");
         JTree.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
         JTree.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));

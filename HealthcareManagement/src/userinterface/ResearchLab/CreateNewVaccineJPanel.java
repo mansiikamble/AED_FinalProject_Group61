@@ -76,7 +76,7 @@ public class CreateNewVaccineJPanel extends javax.swing.JPanel {
         txtVaccinePrice = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(133, 169, 143));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel1.setText("Create New Vaccine");
@@ -93,7 +93,9 @@ public class CreateNewVaccineJPanel extends javax.swing.JPanel {
         jLabel3.setBackground(new java.awt.Color(102, 217, 255));
         jLabel3.setText("Disease:");
 
-        btnCreate.setBackground(new java.awt.Color(102, 217, 255));
+        btnCreate.setBackground(new java.awt.Color(82, 91, 68));
+        btnCreate.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnCreate.setForeground(new java.awt.Color(255, 255, 255));
         btnCreate.setText("Create");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +111,7 @@ public class CreateNewVaccineJPanel extends javax.swing.JPanel {
             }
         });
 
+        tblVaccine.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.lightGray, java.awt.Color.black));
         tblVaccine.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -191,7 +194,7 @@ public class CreateNewVaccineJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(cmbDisease, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtVaccinePrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
